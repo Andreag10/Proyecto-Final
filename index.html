@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div>
+            <!-- <img src="Logo-1.png" width="50px" height="50px"> -->
+            <h1>Mi primer encriptador</h1>
+        </div>
+        <div class="enter">
+            <span>Ingresar datos: </span>
+            <input type="text" id="inputText" placeholder="Introduce el texto aquí">
+            <button id="encriptadorBoton">Encriptar</button>
+            <button id="desencriptadorBoton">Desencriptador</button>
+        </div>
+        <div class="output">
+            <span>Resultado: </span>
+            <!-- <img height="100px" width="auto" id="imagen_no_encontrada" src="1.png" alt="Imagen de marcador de posición"> -->
+             <span id="imagen_no_encontrada">No se encontró ningun mensaje</span>
+            <input type="texto" id="resultado" oninput="convertirAMinusculas(this)" readonly
+                placeholder="Texto encriptado/desencriptado aparecerá aquí">
+        </div>
+        <div class="copy">
+            <code id="copia"></code>
+            <button id="btn_copiar">COPIAR</button>
+        </div>
+    </main>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
